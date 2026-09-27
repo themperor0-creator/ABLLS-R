@@ -233,6 +233,31 @@
             flex-wrap: wrap;
         }
 
+        /* تنسيق نص المطور */
+        .developer-footer {
+    background-color: #121d2c; /* لون خلفية داكن وأنيق */
+    color: #ffffff; /* لون النص */
+    text-align: center;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    border-top: 2px solid #333;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* مسافة بسيطة بين السطرين */
+}
+
+.dev-credit {
+    color: #b0b0b0; /* لون أهدا قليلاً للنص التوضيحي */
+}
+
+.dev-name {
+    color: #3498db; /* لون مميز لاسم المطور ليلفت الانتباه */
+    font-weight: bold;
+}
         /* تنسيق الجداول والتقرير النهائي */
         .report-info-box {
             background-color: #F1F5F9;
@@ -456,7 +481,7 @@
         </div>
 
         <div class="actions-bar">
-            <button class="btn" onclick="goToStep2()">الانتقال لتقييم البنود &larr;</button>
+            <button class="btn" onclick="goToStep2()">الانتقال لتقييم البنود </button>
         </div>
     </div>
 
@@ -470,8 +495,8 @@
         <div id="domainsContainer"></div>
 
         <div class="actions-bar">
-            <button class="btn btn-secondary" onclick="goToStep1()">&rarr; السابق</button>
-            <button class="btn" onclick="generateReport()">عرض التقرير وجداول النتائج &larr;</button>
+            <button class="btn btn-secondary" onclick="goToStep1()"> السابق</button>
+            <button class="btn" onclick="generateReport()">عرض التقرير وجداول النتائج </button>
         </div>
     </div>
 
@@ -487,11 +512,16 @@
         <div id="reportTablesContainer"></div>
 
         <div class="actions-bar">
-            <button class="btn btn-secondary no-print" onclick="goToStep2()">&rarr; تعديل التقييم</button>
+            <button class="btn btn-secondary no-print" onclick="goToStep2()">تعديل التقييم</button>
             <button class="btn btn-print no-print" onclick="window.print()">طباعة / حفظ كـ PDF</button>
         </div>
     </div>
-
+<footer class="developer-footer">
+    <div class="footer-content">
+        <p>جميع الحقوق محفوظة &copy;</p>
+        <p class="dev-credit">تم التطوير بواسطة <span class="dev-name">سنوسي معروف</span> - <span class="dev-title">أخصائي التربية الخاصة</span></p>
+    </div>
+</footer>
 </div>
 
 <script>
@@ -586,6 +616,9 @@ const abllsData = {
                 { id: "C25", title: "يحدد أشياء باتباع نظرة الآخرين", text: "يحدد الطفل أشياء بالانتباه لاتجاه نظرة عين شخص آخر." },
                 { id: "C26", title: "يتبع الإشارات الوصفية", text: "يتبع الطفل الإشارات الوصفية التي يقوم بها المعلم بيديه لكي يأتي أو يقعد أو يقف أو يذهب لمكان، أو تؤدي أفعال معينة." },
                 { id: "C27", title: "اتباع التعليمات للذهاب لشخص ما", text: "سيتمكن الطفل من السير خلال الحجرة للذهاب لشخص محدد." },
+                { id: "C28", title: "اتباع التعليمات باعطاء شيء ما لشخص محدد أو بوضع شيء على شيء آخر", text: "سيتمكن الطفل من السير خلال الحجرة للذهاب لمكان أو لشخص محدد ووضع أو تسليم شيء مثلا اعطاء القلم لعلي." },
+                { id: "C29", title: "اتباع التعليمات للذهاب لشخص ما واحضار شيء محدد", text: "سيتمكن الطفل من السير عبر الحجرة للذهاب لمكان أو لشخص معين واحضار الشيء المطلوب." },
+                { id: "C30", title: "اتباع التعليمات للذهاب لشخص ماوالقيام بنشاط ", text: "سيتمكن الطفل من السير خلال الحجرة للذهاب لشخص معين والقيام بنشاط محدد مثلا سلم على وليد." },
                 { id: "C31", title: "يتبع التعليمات الصحيحة لاختيار العنصر المحدد", text: "سيتبع الطفل التعليمات الصحيحة لاختيار العنصر المحدد عند الطلب منه أن (المس...، قم بالإشارة إلى...، اعطني...، خذ...، احضر...)." },
                 { id: "C32", title: "اختيار الشيء المناسب للقيام بنشاط ما، من ضمن عدة أشياء", text: "سيمتثل الطفل للتعليمات للقيام بنشاط بسيط عند تقديم عدة أشياء أحداها يستخدم لأداء هذا النشاط." },
                 { id: "C33", title: "يؤدي فعل بأشياء متعددة", text: "يؤدي الطفل فعل محدد باستخدام أشياء متعددة." },
