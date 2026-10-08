@@ -608,8 +608,9 @@
             margin: 0 auto;
         }
 
+        /* تحسين وتنسيق شريط الأدوات العلوي */
         .plan-top-toolbar {
-            background: #f8fafc;
+            background: #ffffff;
             border: 1px solid var(--border);
             border-radius: var(--radius);
             padding: 12px 16px;
@@ -618,14 +619,22 @@
             flex-wrap: wrap;
             align-items: center;
             justify-content: space-between;
-            gap: 12px;
+            gap: 10px;
+            box-shadow: var(--shadow-sm);
         }
 
         .toolbar-group {
             display: flex;
             align-items: center;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 8px;
+        }
+
+        .plan-top-toolbar .btn {
+            padding: 8px 14px;
+            font-size: 0.82rem;
+            font-weight: 700;
+            border-radius: 8px;
         }
 
         .print-controls-panel {
@@ -820,10 +829,31 @@
 
         @media (max-width: 640px) {
             .plan-meta-grid { grid-template-columns: 1fr 1fr; }
-            .toolbar-group { width: 100%; justify-content: space-between; }
             .header-btn-plan { font-size: 0.8rem; padding: 6px 10px; }
             .stepper-nav { flex-wrap: wrap; }
             .step-pill { flex-basis: 48%; }
+            
+            /* تحسين شريط الأدوات في الهواتف الذكية */
+            .plan-top-toolbar {
+                padding: 10px;
+                gap: 8px;
+            }
+            .toolbar-group {
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 8px;
+            }
+            .toolbar-group:last-child {
+                grid-template-columns: 1fr;
+                margin-top: 2px;
+            }
+            .plan-top-toolbar .btn {
+                width: 100%;
+                justify-content: center;
+                padding: 9px 8px;
+                font-size: 0.8rem;
+            }
         }
     </style>
 </head>
@@ -840,7 +870,7 @@
                 <p>منظومة إعداد وبناء الخطة التربوية الفردية المنقحة</p>
             </div>
             <div class="header-actions">
-                <button class="header-btn" onclick="exportPlanData()" title="حفظ الخطة في ملف باسم الطفل">
+                <button class="header-btn" onclick="exportPlanData()" title="تصدير الخطة في ملف">
                     <svg class="svg-icon" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
                     <span>تصدير / حفظ</span>
                 </button>
@@ -975,17 +1005,17 @@
             
             <div class="plan-top-toolbar no-print">
                 <div class="toolbar-group">
-                    <button class="btn btn-outline" onclick="closePlanModal()">
+                    <button class="btn btn-outline" onclick="closePlanModal()" title="إغلاق المعاينة والعودة للتقييم">
                         <svg class="svg-icon" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-                        <span>إغلاق والعودة للتقييم</span>
+                        <span>إغلاق وعودة</span>
                     </button>
-                    <button class="btn btn-outline" onclick="exportPlanData()">
+                    <button class="btn btn-outline" onclick="exportPlanData()" title="تصدير الخطة كملف">
                         <svg class="svg-icon" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-                        <span>حفظ الخطة باسم الطفل</span>
+                        <span>تصدير الخطة</span>
                     </button>
-                    <button class="btn btn-outline" onclick="togglePrintControls()">
+                    <button class="btn btn-outline" onclick="togglePrintControls()" title="تخصيص الخطوط والشعار">
                         <svg class="svg-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
-                        <span>تخصيص تنسيق الطباعة والشعار</span>
+                        <span>تخصيص التنسيق</span>
                     </button>
                 </div>
                 <div class="toolbar-group">
@@ -1623,7 +1653,23 @@
 
         function triggerSmartPrint() {
             applyPrintCustomizations();
+
+            // حفظ اسم الطفل كاسم افتراضي لملف الـ PDF عند الطباعة
+            const childName = (document.getElementById('childName').value || '').trim();
+            const originalTitle = document.title;
+            
+            if (childName) {
+                document.title = `خطة_الطفل_${childName.replace(/[/\\?%*:|"<>]/g, '_')}_ABLLS`;
+            } else {
+                document.title = 'خطة_فردية_ABLLS';
+            }
+
             window.print();
+
+            // إعادة عنوان الصفحة الأصلي بعد اكتمال أمر الطباعة
+            setTimeout(() => {
+                document.title = originalTitle;
+            }, 1500);
         }
 
         function exportPlanData() {
@@ -1662,7 +1708,7 @@
             document.body.removeChild(a);
             URL.revokeObjectURL(url);
 
-            showToast('تم حفظ الخطة بنجاح', `تم تنزيل ملف الخطة باسم [${fileName}].`, 'success');
+            showToast('تم تصدير الخطة بنجاح', `تم تنزيل ملف الخطة باسم [${fileName}].`, 'success');
         }
 
         function triggerImport() {

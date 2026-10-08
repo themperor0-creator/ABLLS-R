@@ -11,7 +11,7 @@ const d4Data = {
           name: "السير لأمام بخطوات مناسبة",
           goalText: "سيتمكن الطفل من السير لأمام بخطوات مناسبة.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -20,7 +20,7 @@ const d4Data = {
           name: "الركوع",
           goalText: "سيتمكن الطفل من المشاركة في وضع الركوع والخروج منه.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -29,7 +29,7 @@ const d4Data = {
           name: "العدو برفق",
           goalText: "سيتمكن الطفل من العدو برفق.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -38,7 +38,7 @@ const d4Data = {
           name: "التدحرج جانبا",
           goalText: "سيتمكن الطفل من التدحرج جانباً.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -47,7 +47,7 @@ const d4Data = {
           name: "القفز للأمام",
           goalText: "سيتمكن الطفل من القفز لأمام مستخدماً كلتا قدميه.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -56,7 +56,7 @@ const d4Data = {
           name: "القفز لأسفل",
           goalText: "سيتمكن الطفل من القفز لأسفل من على شيء ما.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -65,7 +65,7 @@ const d4Data = {
           name: "السير للخلف",
           goalText: "سيتمكن الطفل من السير للخلف.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -74,7 +74,7 @@ const d4Data = {
           name: "النط على القدمين",
           goalText: "سيتمكن الطفل من النط على كلتا قدميه.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -83,7 +83,7 @@ const d4Data = {
           name: "قذف الكرة من الصدر أو بيديه لأعلى",
           goalText: "سيتمكن الطفل من قذف كرة قطرها (20 سم) من الصدر أو بيديه لأعلى لشخص ما على بعد (120 سم).",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -92,7 +92,7 @@ const d4Data = {
           name: "دحرجة الكرة",
           goalText: "سيتمكن الطفل من دحرجة الكرة لشخص آخر على بعد (180 سم).",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -101,7 +101,7 @@ const d4Data = {
           name: "صعود السلم مستخدماً حركة تبادلية",
           goalText: "سيتمكن الطفل من صعود السلم ارتفاع (1.5 متر) مستخدماً حركة تبادلية.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -110,7 +110,7 @@ const d4Data = {
           name: "الزحف على المعدة",
           goalText: "سيتمكن الطفل من الزحف على معدته على الأقل لمسافة (90 سم).",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -119,7 +119,7 @@ const d4Data = {
           name: "جلوس القرفصاء",
           goalText: "سيتمكن الطفل من جلوس القرفصاء، والخروج من هذا الوضع.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -128,7 +128,7 @@ const d4Data = {
           name: "السير فوق عارضة توازن",
           goalText: "سيتمكن الطفل من السير فوق عارضة توازن أو لوح أخر ضيق مسافة (240 سم) دون السقوط.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -137,7 +137,7 @@ const d4Data = {
           name: "إمساك الكرة بأي طريقة",
           goalText: "سيتمكن الطفل من الإمساك بكرة قطرها (20 سم) تقذف من مسافة (120 سم) بما في ذلك إمساك الكرة بين الصدر والذراعين.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -146,7 +146,7 @@ const d4Data = {
           name: "ركوب دراجة ذات ثلاث إطارات",
           goalText: "سيتمكن الطفل من ركوب الدراجة ذات ثلاث إطارات لمسافة (6 أمتار) على الأقل.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -155,7 +155,7 @@ const d4Data = {
           name: "السير جنباً",
           goalText: "سيتمكن الطفل من السير جانباً.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -164,7 +164,7 @@ const d4Data = {
           name: "الحجل",
           goalText: "سيتمكن الطفل من الحجل (القفز على رجل واحدة).",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -173,7 +173,7 @@ const d4Data = {
           name: "الاتزان على قدم واحدة",
           goalText: "سيتمكن الطفل من الحفاظ على توازنه على قدم واحدة لمدة (3) ثواني على الأقل.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -182,7 +182,7 @@ const d4Data = {
           name: "ركل الكرة نحو الهدف",
           goalText: "سيتمكن الطفل من ركل كرة قطرها (30 سم) لشخص آخر أو لهدف على بعد (180 سم) على الأقل.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -191,7 +191,7 @@ const d4Data = {
           name: "التعلق على عقلة",
           goalText: "سيتمكن الطفل من التحكم في وزنه المعلق عند استخدام العقلة.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -200,7 +200,7 @@ const d4Data = {
           name: "إمساك الكرة باليدين",
           goalText: "سيتمكن الطفل من الإمساك بكرة قطرها (20 سم) بواسطة اليدين فقط (على ألا يمسكها بين الصدر والذراعين) حينما تقذف من مسافة (160 سم).",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -209,7 +209,7 @@ const d4Data = {
           name: "قذف الكرة بيديه لأسفل",
           goalText: "سيتمكن الطفل من قذف كرة قطرها (20 سم) من الصدر أو بيديه لأسفل لشخص ما على بعد (120 سم).",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -218,7 +218,7 @@ const d4Data = {
           name: "قذف والتقاط الكرة",
           goalText: "أن يقذف الطفل الكرة في الهواء ويلتقطها بيده دون أن تسقط على الأرض.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -227,7 +227,7 @@ const d4Data = {
           name: "تنطيط الكرة",
           goalText: "سيتمكن الطفل من تنطيط الكرة   الكرة على الاقل 3 مرات.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -236,7 +236,7 @@ const d4Data = {
           name: "ركل كرة متحركة",
           goalText: "ان يركل الطفل كرة تتحرك ببطىء في اتجاه محدد",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -245,7 +245,7 @@ const d4Data = {
           name: "الاهتزاز اثناء التدحرج",
           goalText: "سيتمكن الطفل من تحريك ساقيه اثناء التدحرج.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -254,7 +254,7 @@ const d4Data = {
           name: "القفز بخفة",
           goalText: "سيتمكن الطفل من الوثب بخفة.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -263,7 +263,7 @@ const d4Data = {
           name: "القفز من فوق رافعة",
           goalText: "سيتمكن الطفل من القفز من فوق رافعة.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -272,7 +272,7 @@ const d4Data = {
           name: "ركوب دراجة",
           goalText: "سيتمكن الطفل من ركوب دراجة وايقافها.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         }
@@ -287,7 +287,7 @@ const d4Data = {
           name: "وضع علامة (الشخبطة) على الورق باستخدام قلم",
           goalText: "سيتمكن الطفل من الإمساك بقلم التلوين وعمل علامات أو خطوط على الورقة.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -296,7 +296,7 @@ const d4Data = {
           name: "وضع الاشياء في صندوق خشبي له فتحات مختلفة الشكل",
           goalText: "سيتمكن الطفل من وضع الأشكال المجسمة في الفتحات المناسبة لها بصندوق الأشكال.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -305,7 +305,7 @@ const d4Data = {
           name: "تركيب بازل من قطعة واحدة",
           goalText: "سيتمكن الطفل من وضع قطع البازل ذات القطعة الواحدة داخل الإطار المخصص لها.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -314,7 +314,7 @@ const d4Data = {
           name: " بازل بقطع متعددة في إطار",
           goalText: "سيتمكن الطفل من التحكم في وضع قطع البازل المتعددة القطع داخل الاطار الخاص بها.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -323,7 +323,7 @@ const d4Data = {
           name: "وضع المكعبات على كرت تصميم",
           goalText: "سيتمكن الطفل من وضع المكعبات بدقة في مكانها الصحيح على كرت التصميم.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -332,7 +332,7 @@ const d4Data = {
           name: "نقل الأشياء من يد إلى اليد الأخرى",
           goalText: "سيتمكن الطفل من نقل الاشياء من يد لليد الأخرى.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -341,7 +341,7 @@ const d4Data = {
           name: "وضع أعمدة في أماكنها.",
           goalText: "سيتمكن الطفل من وضع أعمدة(أوتاد) في اماكنها المحددة.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -350,7 +350,7 @@ const d4Data = {
           name: "تقليب صفحات الكتاب",
           goalText: "سيتمكن الطفل من تقليب صفحة من الكتاب كل صفحة على حدة.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -359,7 +359,7 @@ const d4Data = {
           name: "وضع مشابك على حبل غسيل",
           goalText: "سيتمكن الطفل من وضع مشابك على حبل غسيل.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -368,7 +368,7 @@ const d4Data = {
           name: "التلوين داخل إطار",
           goalText: "سيتمكن الطفل من تلوين الأشكال داخل الخطوط والحدود المحددة دون الخروج عنها.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -377,7 +377,7 @@ const d4Data = {
           name: "فتح الحقائب ذات السوسته",
           goalText: "سيتمكن الطفل من فتح الحقائب ذات السوسته.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -386,7 +386,7 @@ const d4Data = {
           name: "قص ورق بالمقص",
           goalText: "سيتمكن الطفل من قص الورق بالمقص.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -395,7 +395,7 @@ const d4Data = {
           name: "بناء برج من المكعبات",
           goalText: "سيتمكن الطفل من بناء برج من المكعبات.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -404,7 +404,7 @@ const d4Data = {
           name: "لضم الخرز",
           goalText: "سيتمكن الطفل من لضم حبات الخرز ذات ثقب(3مم).",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -413,7 +413,7 @@ const d4Data = {
           name: "فتح غطاء علبة",
           goalText: "سيتمكن الطفل من فتح غطاء العلبة.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -422,7 +422,7 @@ const d4Data = {
           name: "قص ورق بالمقص",
           goalText: "سيتمكن الطفل من قص ورق بالمقص.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -431,7 +431,7 @@ const d4Data = {
           name: "متابعة الخطوط بالاصبع",
           goalText: "سيتمكن الطفل من متابعة الخطوط بالاصبع.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -440,7 +440,7 @@ const d4Data = {
           name: "الضغط على زجاجة لاخراج سائل",
           goalText: "سيتمكن الطفل من الضغط على زجاجة لاخراج سائل.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -449,7 +449,7 @@ const d4Data = {
           name: "ازالة ورق التغليف",
           goalText: "سيتمكن الطفل من ازالة ورق التغليف للحصول على مواد غذائية.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -458,7 +458,7 @@ const d4Data = {
           name: "نقل الأشكال والانماط إلي حد ما",
           goalText: "سيتمكن الطفل من نقل الاشكال البسيطة والانماط الخطية إلي حد ما.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -467,7 +467,7 @@ const d4Data = {
           name: "لصق أشكال على حدود صورة ذات حدود عريضة",
           goalText: "سيتمكن الطفل من لصق أشكال مقصوصة من الورق في المكان المناسب في أوضاع مناسبة على صورة ذات حدود عريضة وذلك لجعل الصورة تطابق نموذج مشروع فنى مثلا صنع وجه مهرج.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -476,7 +476,7 @@ const d4Data = {
           name: "لصق أشكال على حدود صورة ذات حدود رفيعة",
           goalText: "سيتمكن الطفل من لصق أشكال مقصوصة من الورق في المكان المناسب في أوضاع مناسبة على صورة ذات حدود رفيعة وذلك لجعل الصورة تطابق نموذج مشروع فنى مثلا صنع وجه مهرج.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -485,7 +485,7 @@ const d4Data = {
           name: "حلقات في أوتاد",
           goalText: "أن يضع الطفل حلقات في أوتاد.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -494,7 +494,7 @@ const d4Data = {
           name: "غلق غطاء علبة",
           goalText: "سيتمكن الطفل من غلق غطاء علبة.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -503,7 +503,7 @@ const d4Data = {
           name: "استخدام القبضة الملقاطية",
           goalText: "سيتمكن الطفل من التقاط أشياء صغيرة باستخدام قبضة الكماشة الملقاطية.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -512,7 +512,7 @@ const d4Data = {
           name: "طي قطعة من الورق",
           goalText: "سيتمكن الطفل من مشاهدة شخص يطوي قطعة من الورق ثم يقلده.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -521,7 +521,7 @@ const d4Data = {
           name: "قص الاشكال",
           goalText: "سيتمكن الطفل من قص الاشكال باستخدام المقص.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         },
@@ -530,7 +530,7 @@ const d4Data = {
           name: "نقل رسم الاشكال والانماط بدقة",
           goalText: "سيتمكن الطفل من نقل الاشكال والانماط الخطية.",
           criteria: [
-            { score: 1, label: "نعم." },
+            { score: 1, label: "لم يتقن" },
             { score: 0, label: "لا." }
           ]
         }
